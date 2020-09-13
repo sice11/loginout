@@ -1,0 +1,4 @@
+ユーザー一覧
+<% @users.each do |user| %>
+    <%= link_to user.name, users_show_path(user.id) %>
+<% end %>

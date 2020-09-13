@@ -1,0 +1,8 @@
+<h2>トップページ</h2>
+
+<% if logged_in? %>
+    <%= link_to "ユーザー登録", users_new_path %>
+    <%= link_to "ログイン", login_form_path %>
+<% else %>
+    <%= link_to "ログアウト", logout_path %>
+<% end %>

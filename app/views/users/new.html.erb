@@ -1,0 +1,19 @@
+ユーザー登録
+
+<%= form_for @user, url:users_create_path do |f| %>
+
+    <%= f.label :name, "名前" %>
+    <%= f.text_field :name %>
+
+    <%= f.label :email, "メールアドレス" %>
+    <%= f.text_field :email %>
+
+    <%= f.label :password, "パスワード" %>
+    <%= f.text_field :password %>
+
+    <%= f.label :password_confirmation, "パス確認" %>
+    <%= f.text_field :password_confirmation %>
+
+    <%= f.submit "登録" %>
+
+<% end %>
