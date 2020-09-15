@@ -1,11 +1,13 @@
 <h1>ログイン画面</h1>
 
-<%
-=begin%>
  <%= form_for @user, url: login_path do |f| %> 
+
+ <%
+=begin%>
+ <%= form_for (:session, url: login_path) do |f| %>  
 <%
 =end%>
-<%= form_for (:session, url: login_path) do |f| %>
+
 
     <%= f.label :email, "メールアドレス" %>
     <%= f.email_field :email %>
